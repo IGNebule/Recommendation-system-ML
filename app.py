@@ -21,7 +21,7 @@ def clean_text(text):
 # =========================
 # LOAD DATA
 # =========================
-df = pd.read_csv('../data/processed/games_content.csv')
+df = pd.read_csv('./data/games_content.csv')
 
 # Normalize names ONCE (important)
 df['name_clean'] = df['name'].apply(clean_text)
